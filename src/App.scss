@@ -1,0 +1,37 @@
+body {
+  font-family: "roboto";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: black;
+}
+
+.Card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 5px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding: 10vmax;
+}
+
+
+
+.SocialMediaIconContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 400px;
+  align-items: center;
+  *:hover {
+    color: darkgray;
+  }
+}
+
