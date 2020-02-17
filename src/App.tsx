@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 import logo from "./robot-logo-v2.svg";
 import {
   FaGithub,
@@ -9,7 +10,12 @@ import {
 } from "react-icons/fa";
 import "./App.scss";
 
-const App: React.FC = () => {
+
+export default function App() {
+  useEffect(() => {
+    initializeReactGA();
+  }, [])
+
   return (
     <div className="Card">
       <img src={logo} className="App-logo FullRow" alt="logo" />
@@ -28,4 +34,7 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+function initializeReactGA() {
+  ReactGA.initialize('UA-38131856-5');
+  ReactGA.pageview('/');
+}
