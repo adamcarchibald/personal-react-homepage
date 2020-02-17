@@ -19,10 +19,8 @@ export default function App() {
   return (
     <div className="Card">
       <img src={logo} className="App-logo FullRow" alt="logo" />
-      <h4>
-        <b>Adam Archibald</b>
-      </h4>
-      <p className="FullRow">Cat lover, code writer</p>
+      <h1 className="LargeTitle NoBottomMargin">Adam Archibald</h1>
+      <h3 className="UnderTitle">Cat lover, code writer</h3>
       <div className="SocialMediaIconContainer">
         <a href="https://github.com/adamcarchibald" target="_blank" rel="noopener noreferrer"><FaGithub size={25} /></a>
         <a href="https://www.linkedin.com/in/adamarchibald/" target="_blank" rel="noopener noreferrer"><FaLinkedin size={25} /></a>

@@ -22,7 +22,9 @@ a {
   padding: 10vmax;
 }
 
-
+.LargeText {
+  font-size: x-large;
+}
 
 .SocialMediaIconContainer {
   display: flex;
@@ -33,5 +35,14 @@ a {
   *:hover {
     color: darkgray;
   }
+}
+
+.NoBottomMargin {
+  margin-bottom: 0px;
+}
+
+.UnderTitle {
+  font-style: oblique;
+  margin-top: 0px;
 }
 
